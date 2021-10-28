@@ -6,13 +6,13 @@
 /*   By: agunczer <agunczer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/25 09:32:33 by agunczer          #+#    #+#             */
-/*   Updated: 2021/06/25 09:32:34 by agunczer         ###   ########.fr       */
+/*   Updated: 2021/09/06 10:13:41 by agunczer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int c)
+int	ft_isdigit(char c)
 {
 	if (c >= 48 && c <= 57)
 		return (1);

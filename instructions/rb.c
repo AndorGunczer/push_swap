@@ -1,37 +1,17 @@
 #include <stddef.h>
 #include <stdio.h>
 
-void	ra(int	stack_b[])
+void	rb(int	stack_b[], int size_b)
 {
-	int	i = 5;
-	int	temp1;
-	int	temp2 = stack_b[i];
-	int odd_or_even;
-	int arr_len = 5;
+	int	i;
+	int	first_num;
 
-	while (stack_b[i - 1] != 0)
+	i = 0;
+	first_num = stack_b[i];
+	while (i < size_b)
 	{
-		temp1 = stack_b[i - 1];
-		stack_b[i - 1] = temp2;
-		i--;
-		odd_or_even = 0;
-		if (stack_b[i - 1] != 0)
-		{
-			temp2 = stack_b[i - 1];
-			stack_b[i - 1] = temp1;
-			i--;
-			odd_or_even = 1;
-		}
+		stack_b[i] = stack_b[i + 1];
+		i++;
 	}
-
-	if (odd_or_even == 1)
-	{
-		stack_b[arr_len] = temp2;
-		stack_b[i] = temp1;
-	}
-	else
-	{
-		stack_b[arr_len] = temp1;
-		stack_b[i] = temp2;
-	}
+	stack_b[size_b - 1] = first_num;
 }
