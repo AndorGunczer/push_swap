@@ -1,21 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   fill_stack.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: agunczer <agunczer@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/02 15:24:15 by agunczer          #+#    #+#             */
+/*   Updated: 2021/11/05 16:16:28 by agunczer         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../push_swap.h"
 
-static void	check_stack(t_stack *stack)
-{
-	int	i;
-
-	i = 0;
-	printf("\n Size of stack_a :\t%d", stack->a_size);
-	while (i < stack->a_size)
-	{
-		printf("\n%d :\t%d", i, stack->a[i]);
-		i++;
-	}
-}
-
-// The above functions are only for testing purposes
-
-int		is_sorted(int *stack_a, int size_a)
+int	is_sorted(int *stack_a, int size_a)
 {
 	int	i;
 
@@ -34,8 +31,8 @@ void	stack_assignment(t_stack *stack, t_list *lst)
 	int	max_size;
 
 	max_size = ft_lstsize(lst);
-	stack->a_size = max_size;
-	stack->b_size = 0;
+	stack->size_a = max_size;
+	stack->size_b = 0;
 	stack->a = ft_calloc(sizeof(int), max_size);
 	stack->b = ft_calloc(sizeof(int), max_size);
 }
@@ -50,10 +47,9 @@ void	fill_stack(t_stack *stack, t_list *lst)
 {
 	int	i;
 
-	i = 0;;
+	i = 0;
 	if (stack->a == NULL)
-		finish_error("Problem during runtime");
+		finish_error(ERROR, stack, lst);
 	else
 		ft_lstiter(lst, stack->a, &i, &lst_to_stack_a);
-	check_stack(stack);
 }

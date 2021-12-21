@@ -6,7 +6,7 @@
 #    By: agunczer <agunczer@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/25 09:35:06 by agunczer          #+#    #+#              #
-#    Updated: 2021/10/27 13:43:26 by agunczer         ###   ########.fr        #
+#    Updated: 2021/11/05 14:21:40 by agunczer         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ SRC = ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c ft_memchr.c f
     ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c \
     ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c \
 	ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
-	ft_lstclear.c ft_lstiter.c
+	ft_lstclear.c ft_lstiter.c ft_atoi_l.c ft_lstdel.c
 OBJ = ${SRC:.c=.o}
 NAME = libft.a
 

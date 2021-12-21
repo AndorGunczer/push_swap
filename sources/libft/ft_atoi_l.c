@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_atoi_l.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: agunczer <agunczer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/25 09:31:48 by agunczer          #+#    #+#             */
-/*   Updated: 2021/11/02 14:55:37 by agunczer         ###   ########.fr       */
+/*   Updated: 2021/11/02 14:58:57 by agunczer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 static	int	ft_isspace(char c);
 
-int	ft_atoi(const char *str)
+long long	ft_atoi_l(const char *str)
 {
-	int		i;
-	int		j;
-	int		num;
+	int				i;
+	int				j;
+	long long		num;
 
 	i = 0;
 	j = 0;

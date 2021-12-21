@@ -1,19 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ss.c                                               :+:      :+:    :+:   */
+/*   ft_lstdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: agunczer <agunczer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/02 15:24:51 by agunczer          #+#    #+#             */
-/*   Updated: 2021/11/09 18:54:29 by agunczer         ###   ########.fr       */
+/*   Created: 2021/11/05 14:16:53 by agunczer          #+#    #+#             */
+/*   Updated: 2021/11/05 14:55:29 by agunczer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../push_swap.h"
-
-void	ss(int *stack_a, int *stack_b, int size_a, int size_b)
-{
-	sa(stack_a, size_a);
-	sb(stack_b, size_b);
-}
+// void	ft_lstdel(t_list *lst)
+// {
+// 	// while (lst->next != NULL)
+// 	// {
+// 	// 	ft_lstdelone(lst, &free);
+// 	// 	lst = lst->next;
+// 	// }
+// 	// ft_lstdelone(lst, &free);
+// }
